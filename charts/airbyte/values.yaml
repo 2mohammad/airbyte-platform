@@ -144,10 +144,13 @@ global:
   jobs:
     resources:
       ## Example:
-      ## requests:
-      ##    memory: 256Mi
-      ##    cpu: 250m
+      requests:
+        memory: 1Gi
+        cpu: 250m
       # -- Job resource requests
+      limit:
+        memory: 4Gi
+        cpu: 2
       requests: {}
       ## Example:
       ## limits:
